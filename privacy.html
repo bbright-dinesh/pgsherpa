@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>pgSherpa: Privacy Policy</title>
+<meta name="description" content="What pgSherpa does with your data: nothing is collected by the publisher.">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header><img src="icon.png" alt=""><a href="./">pgSherpa</a><nav><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav></header>
+<h1>Privacy Policy</h1>
+<p class="lead">Last updated 12 November 2026.</p>
+<p><b>The short version: we collect nothing.</b> pgSherpa has no analytics, no telemetry, no accounts and no advertising. BillionBright Solutions LLP, its publisher, receives no data from the app.</p>
+<h2>What stays on your computer</h2>
+<p>Everything you set up in pgSherpa is stored only on your computer: the PostgreSQL servers you add and their connection strings, cloud provider tokens, your Anthropic API key, alert destinations, and your preferences. Uninstalling the app and removing its data folder removes all of it.</p>
+<h2>What leaves your computer, and when</h2>
+<p>pgSherpa connects only to the services below, and only for the feature named. It makes these connections from your computer directly; none of them pass through us.</p>
+<table>
+<tr><th>What is sent</th><th>To</th><th>When</th></tr>
+<tr><td>Read-only SQL queries</td><td>The PostgreSQL servers (and PgBouncer) you add</td><td>Always, while a server is added</td></tr>
+<tr><td>Your server's version number</td><td>postgresql.org and the U.S. National Vulnerability Database (NVD)</td><td>While "Releases &amp; CVEs" is on</td></tr>
+<tr><td>Nothing; public posts are only read</td><td>planet.postgresql.org and postgresql.org</td><td>While "Blog posts" is on</td></tr>
+<tr><td>Your read-only API token</td><td>DigitalOcean or Supabase, to list your databases and their backups</td><td>While a cloud account is connected</td></tr>
+<tr><td>Your question, database metadata and the query results the assistant reads</td><td>Anthropic's Claude API, using your own API key</td><td>Only when you use Ask</td></tr>
+<tr><td>The title of a critical alert and the server's name</td><td>Slack or PagerDuty</td><td>Only if you enter a webhook or routing key</td></tr>
+</table>
+<p>Each of those services handles what it receives under its own privacy policy. Ask can send the contents of query results to Anthropic; do not use it on data you may not share with them.</p>
+<h2>What pgSherpa can do to your databases</h2>
+<p>Nothing that changes them. Every statement runs in a read-only transaction. The only action that affects a server is cancelling or terminating a session, and only after you confirm it.</p>
+<h2>Children</h2>
+<p>pgSherpa is a tool for database professionals and is not directed at children.</p>
+<h2>Changes</h2>
+<p>If this policy changes, the new version will be published on this page with a new date.</p>
+<h2>Contact</h2>
+<p>Questions about this policy: open an issue at <a href="https://github.com/bbright-dinesh/pgsherpa/issues">github.com/bbright-dinesh/pgsherpa/issues</a>.</p>
+<footer>pgSherpa is published by BillionBright Solutions LLP. PostgreSQL is a trademark of the PostgreSQL Community Association of Canada; pgSherpa is not affiliated with or endorsed by the PostgreSQL project.</footer>
+</main>
+</body>
+</html>
