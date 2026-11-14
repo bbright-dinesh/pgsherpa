@@ -20,7 +20,8 @@
 <p>pgSherpa connects only to the services below, and only for the feature named. It makes these connections from your computer directly; none of them pass through us.</p>
 <table>
 <tr><th>What is sent</th><th>To</th><th>When</th></tr>
-<tr><td>Read-only SQL queries</td><td>The PostgreSQL servers (and PgBouncer) you add</td><td>Always, while a server is added</td></tr>
+<tr><td>SQL queries (read-only, unless you switch the SQL box to write)</td><td>The PostgreSQL servers (and PgBouncer) you add</td><td>Always, while a server is added</td></tr>
+<tr><td>Nothing (the latest version number is only read)</td><td>GitHub, by the copy downloaded from GitHub, to say when a newer pgSherpa is out</td><td>Once a day, while Updates is on</td></tr>
 <tr><td>Your server's version number</td><td>postgresql.org and the U.S. National Vulnerability Database (NVD)</td><td>While "Releases &amp; CVEs" is on</td></tr>
 <tr><td>Nothing; public posts are only read</td><td>planet.postgresql.org and postgresql.org</td><td>While "Blog posts" is on</td></tr>
 <tr><td>Your read-only API token</td><td>DigitalOcean or Supabase, to list your databases and their backups</td><td>While a cloud account is connected</td></tr>
@@ -29,7 +30,7 @@
 </table>
 <p>Each of those services handles what it receives under its own privacy policy. Ask can send the contents of query results to Anthropic; do not use it on data you may not share with them.</p>
 <h2>What pgSherpa can do to your databases</h2>
-<p>Nothing that changes them. Every statement runs in a read-only transaction. The only action that affects a server is cancelling or terminating a session, and only after you confirm it.</p>
+<p>Nothing that changes them, unless you ask. Every statement runs in a read-only transaction. A statement that writes, and cancelling or terminating a session, are only sent after you switch the SQL box to write, which macOS confirms with Touch ID or your password, and each still needs you to type or confirm it. Nothing is ever changed at a cloud provider.</p>
 <h2>Children</h2>
 <p>pgSherpa is a tool for database professionals and is not directed at children.</p>
 <h2>Changes</h2>
