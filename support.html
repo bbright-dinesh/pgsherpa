@@ -3,32 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>pgSherpa: Support</title>
-<meta name="description" content="Help with pgSherpa: getting started, common questions, and how to reach us.">
+<title>pgSherpa Support</title>
+<link rel="canonical" href="https://cortexridge.com/pgsherpa/support/">
+<meta http-equiv="refresh" content="0; url=https://cortexridge.com/pgsherpa/support/">
+<meta name="robots" content="noindex">
 <link rel="icon" href="icon.png">
 <link rel="stylesheet" href="style.css">
+<script>location.replace("https://cortexridge.com/pgsherpa/support/");</script>
 </head>
 <body>
 <main>
-<header><img src="icon.png" alt=""><a href="./">pgSherpa</a><nav><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav></header>
-<h1>Support</h1>
-<p class="lead">Help with pgSherpa for macOS.</p>
-<h2>Contact</h2>
-<p>Report a problem or ask a question by opening an issue at <a href="https://github.com/bbright-dinesh/pgsherpa/issues">github.com/bbright-dinesh/pgsherpa/issues</a>. Please include your pgSherpa version, your macOS version and your PostgreSQL version. Never include passwords, tokens or connection strings.</p>
-<h2>Getting started</h2>
-<ul>
-<li><b>Open the panel:</b> click pgSherpa. Click him again to close it.</li>
-<li><b>Add a server:</b> the gear icon, then Servers, then Add server. A PostgreSQL role with <code>pg_monitor</code> is enough.</li>
-<li><b>Run SQL:</b> click the PSQL chip beside him. Enter after a closing semicolon runs the statement. It is read-only unless you click the <code>read &gt;</code> prompt to switch to write, which asks for Touch ID or your password.</li>
-<li><b>Bring him back or quit:</b> the two-peaks icon in the menu bar.</li>
-</ul>
-<h2>Common questions</h2>
-<p><b>Does pgSherpa change my database?</b><br>Not unless you tell it to. Every statement runs in a read-only transaction. Writing a statement, and cancelling or terminating a session, need the SQL box switched to write: macOS asks for Touch ID or your password first, and it is back on read every time the app starts. pgSherpa's own checks never write.</p>
-<p><b>Which PostgreSQL versions work?</b><br>It is tested with PostgreSQL 16 and 17, including DigitalOcean Managed Databases and Supabase. Other supported PostgreSQL versions should work; features that need a newer version say so.</p>
-<p><b>Why is pg_stat_statements empty on the Activity tab?</b><br>That page reads the <code>pg_stat_statements</code> extension. It shows how to enable it if it is not installed, or the database's own error if the role may not read it. The other pages (pg_stat_activity, Replication, Backup) need nothing installed.</p>
-<p><b>Where are my settings kept?</b><br>Only on your Mac. See the <a href="privacy.html">privacy policy</a>.</p>
-<p><b>He disappeared.</b><br>Choose Show pgSherpa from the two-peaks icon in the menu bar.</p>
-<footer>pgSherpa is published by BillionBright Solutions LLP. PostgreSQL is a trademark of the PostgreSQL Community Association of Canada; pgSherpa is not affiliated with or endorsed by the PostgreSQL project.</footer>
+<h1>pgSherpa Support has moved</h1>
+<p class="lead">This page is now at <a href="https://cortexridge.com/pgsherpa/support/">cortexridge.com/pgsherpa/support/</a>.</p>
 </main>
 </body>
 </html>
