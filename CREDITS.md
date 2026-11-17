@@ -20,7 +20,7 @@ worked these out over many years on real servers and shared them with everyone.
 | [pg_activity](https://github.com/dalibo/pg_activity) | Julien Tachoires, Dalibo | Temporary files on disk right now. | PostgreSQL |
 | [Datadog PostgreSQL integration](https://github.com/DataDog/integrations-core/tree/master/postgres) | Datadog | The last checkpoint from pg_control, idle transactions holding exclusive locks, pg_stat_wal, the progress views, session counters. | BSD-3-Clause |
 | [pganalyze collector](https://github.com/pganalyze/collector) | pganalyze | pg_stat_statements snapshots (text only for the top entries, columns by extension version), per-table stats, insert-only tables vacuum never visits, the xmin horizon broken down by what holds it. | BSD-3-Clause |
-| [Zabbix agent 2 PostgreSQL template](https://github.com/zabbix/zabbix/tree/master/templates/db/postgresql_agent2) | Zabbix | Signals and thresholds. | AGPL-3.0 |
+| [Zabbix agent 2 PostgreSQL template](https://github.com/zabbix/zabbix/tree/master/templates/db/postgresql_agent2) | Zabbix | Ideas only: which signals are worth watching, and at what thresholds. None of its code or SQL. | AGPL-3.0 |
 | [pg_catcheck](https://github.com/EnterpriseDB/pg_catcheck) | EnterpriseDB | The idea behind the catalog consistency check: catalog rows pointing at objects that don't exist. | PostgreSQL |
 
 Thresholds that none of these define are pgSherpa's own.

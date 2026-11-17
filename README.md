@@ -23,7 +23,7 @@ open-source PostgreSQL projects. Thank you to their authors and contributors:
 [pg_activity](https://github.com/dalibo/pg_activity) ·
 [Datadog PostgreSQL integration](https://github.com/DataDog/integrations-core/tree/master/postgres) ·
 [pganalyze collector](https://github.com/pganalyze/collector) ·
-[Zabbix PostgreSQL template](https://github.com/zabbix/zabbix/tree/master/templates/db/postgresql_agent2) ·
+[Zabbix PostgreSQL template](https://github.com/zabbix/zabbix/tree/master/templates/db/postgresql_agent2) (ideas only, none of its code) ·
 [pg_catcheck](https://github.com/EnterpriseDB/pg_catcheck)
 
 It also works with the [pgsentinel](https://github.com/pgsentinel/pgsentinel) and
