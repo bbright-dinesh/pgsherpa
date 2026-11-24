@@ -6,6 +6,8 @@ worked these out over many years on real servers and shared them with everyone.
 
 **Thank you** to every author and contributor of these projects. pgSherpa would not exist without your work.
 
+The app carries the same list, with each project's licence in full, under Settings → About → Credits and licences.
+
 ## Where the SQL queries come from
 
 | Project | By | What pgSherpa took from it | Licence |
